@@ -1,0 +1,26 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "a simple todo app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OKiMaureen/todoApp.git"
+  },
+  "author": "maureen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OKiMaureen/todoApp/issues"
+  },
+  "homepage": "https://github.com/OKiMaureen/todoApp#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  },
+  "dependencies": {}
+}
