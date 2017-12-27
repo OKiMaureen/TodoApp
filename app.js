@@ -5,7 +5,7 @@ const express = require('express');
 const todoControllers = require('./controllers/todoController.js');
 
 const app = express();
-//set up template engine
+//set up template engine using ejs
 app.set('view engine', 'ejs');
 
 //set up static file
