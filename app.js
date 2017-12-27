@@ -1,3 +1,10 @@
+<<<<<<< ft-installations
+const express = require("express");
+
+
+express()
+.set("views engine", ejs)
+=======
 //requiring express module
 const express = require('express');
 
@@ -16,3 +23,4 @@ todoControllers(app);
 
 //listen to server in port 3000
 app.listen(3000, ()=>{console.log('listening to port 3000')});
+>>>>>>> develop
