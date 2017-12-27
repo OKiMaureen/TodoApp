@@ -4,6 +4,7 @@
   "description": "a simple todo app",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +22,9 @@
     "babel-preset-env": "^1.6.1",
     "body-parser": "^1.18.2",
     "express": "^4.16.2"
+  },
+  "engines": {
+    "node": "8.9.1"
   },
   "dependencies": {}
 }
