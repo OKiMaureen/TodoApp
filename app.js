@@ -11,8 +11,8 @@ app.set('view engine', 'ejs');
 //set up static file
 app.use(express.static('./public'));
 
-//fires controllers
-todoControllers(app);
+//fires controllers from todoController module
+todoController(app);
 
 //listen to server in port 3000
 app.listen(3000, ()=>{console.log('listening to port 3000')});
