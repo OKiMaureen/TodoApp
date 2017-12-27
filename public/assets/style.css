@@ -1,5 +1,5 @@
 body{
-        background: #0d1521;
+        background: #181c22;
        font-family: tahoma;
        color: #989898;
     }
@@ -7,7 +7,6 @@ body{
     #todo-table{
         position: relative;
         width: 95%;
-        background: #090d13;
         margin: 0 auto;
         padding: 20px;
         box-sizing: border-box;
@@ -21,7 +20,9 @@ body{
     }
     
     input[type="text"]{
-        width: 70%;
+        width: 60%;
+        margin-left: 10%;
+        margin-bottom: 30px;
         padding: 20px;
         background:#181c22;
         border: 0;
@@ -32,7 +33,9 @@ body{
     
     button{
         padding: 20px;
-        width: 30%;
+        width: 20%;
+        margin-right: 10%;
+        margin-bottom: 30px;
         float: left;
         background: #23282e;
         border: 0;
@@ -49,6 +52,7 @@ body{
     }
     
     li{
+        margin-top:30px;
         width: 100%;
         padding: 20px;
         box-sizing: border-box;
@@ -60,7 +64,7 @@ body{
     
     li:hover{
         text-decoration: line-through;
-        background: rgba(0,0,0,0.2);
+        
     }
     
     h1{
@@ -68,4 +72,13 @@ body{
         margin-bottom: 0;
         text-indent: -10000px;
     }
-   
+    #contact-section{
+        background-color:blueviolet;
+        color:#fff;
+        padding-top:100px;
+    }
+    #home-section{
+        background-color:#181c22;
+        color:#fff;
+        margin-top: 100px;
+    }
