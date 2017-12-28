@@ -4,6 +4,7 @@
   "description": "a simple todo app",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +24,9 @@
     "ejs": "^2.5.7",
     "express": "^4.16.2",
     "nodemon": "^1.14.3"
+  },
+  "engines": {
+    "node": "8.9.1"
   },
   "dependencies": {}
 }
