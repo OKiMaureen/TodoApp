@@ -4,6 +4,9 @@ const data =[{item:'call me'},{item:'eat food'},{item:'read book'}];
 //requiring body-parser module
 const bodyParser = require('body-parser');
 
+
+const urlencodedParser = bodyParser.urlencoded({extended:false});
+
 //exporting  todoController module
 module.exports =(app)=>{
 
