@@ -19,14 +19,13 @@
   "homepage": "https://github.com/OKiMaureen/todoApp#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "body-parser": "^1.18.2",
-    "ejs": "^2.5.7",
-    "express": "^4.16.2",
-    "nodemon": "^1.14.3"
+    "babel-preset-env": "^1.6.1"
   },
   "engines": {
     "node": "8.9.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
 }
