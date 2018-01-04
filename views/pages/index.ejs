@@ -1,54 +1,59 @@
 <html>
-    <head>
-        <title>Todo App</title>
-        <% include ../partials/links.ejs %>
-    </head>
-    <body>
-        <% include ../partials/nav.ejs %>
+
+<head>
+    <title>Todo App</title>
+    <% include ../partials/links.ejs %>
+</head>
+
+<body>
+    <% include ../partials/nav.ejs %>
         <section id="home-section">
             <div class="column">
-                <div class ="row">
-                    <div class ="col text-center">
+                <div class="row">
+                    <div class="col text-center">
                         <h2>WELCOME TO TODOO APP</h2>
                         <p>We make your tasks doable.</p>
-                        <hr/>
-                        <form>
-                            <input type="text" name="item" placeholder="add new item..." required>
-                            <button type="submit" >Add Task</button>
-                        </form>
-                        <ul>
-                            <% for (let value of todos){ %>
-                            <li><%= value.item %></li>
-                            <% } %> 
-                        </ul>
-
+                        <div id="todo-table">
+                            <form>
+                                <input type="text" name="item" placeholder="add new item..." required>
+                                <button type="submit" value="post">Add Task</button>
+                            </form>
+                            <ul>
+                                <% for (let value of todos){ %>
+                                    <li>
+                                        <%= value.item %>
+                                    </li>
+                                    <% } %>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="contact-section">
             <div class="container">
-              <div class="row">
-                <div class="col text-center">
-                  <div class="p-5">
-                    <h1 class="display-4">We are Here for you!</h1>
-                    <p class="lead">We help make your tasks do-able!</p>
-                    <p>You can reach us via the following mediums.</p>
-                   </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="p-5">
+                            <h1 class="display-4">We are Here for you!</h1>
+                            <p class="lead">We help make your tasks do-able!</p>
+                            <p>You can reach us via the following mediums.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col text-center">
-                  <p>Phone Number: 08138999093</p>
+                <div class="row">
+                    <div class="col text-center">
+                        <p>Phone Number: 08138999093</p>
+                    </div>
+                    <div class="col text-center">
+                        <p>Email:
+                            <a href="mailto:oki.maureen.eloho@gmai.com">todooapp@gmail.com</a>
+                        </p>
+                    </div>
                 </div>
-                <div class="col text-center">
-                  <p>Email: 
-                    <a href="mailto:oki.maureen.eloho@gmai.com">todooapp@gmail.com</a>
-                  </p>
-                </div>
-              </div>
             </div>
-          </section>
-          <% include ../partials/footer.ejs %>
-    </body>
+        </section>
+        <% include ../partials/footer.ejs %>
+</body>
+
 </html>
