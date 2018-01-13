@@ -1,9 +1,30 @@
-//creating dummy data
-let data = [{ item: 'call me' }, { item: 'eat food' }, { item: 'read book' }, { item: 'sing song' }];
 
 //requiring body-parser module
 let bodyParser = require('body-parser');
 
+//requiring mongoose
+let mongoose = require('mongoose');
+
+//connect to database
+mongoose.connect('mongodb://test:test@ds143030.mlab.com:43030/todoapp');
+
+//create a schema - this is like a blueprint
+let todoSchema = new mongoose.Schema({
+    item = String
+});
+
+//create model
+let Todo = mongoose.model('Todo', todoSchema);
+
+//creating item in database
+let itemOne = Todo({item:'collect books'}).save(err=>{
+    if (err) throw err;
+    console.log('item saved successfully');
+
+}) 
+
+//creating dummy data
+let data = [{ item: 'call me' }, { item: 'eat food' }, { item: 'read book' }, { item: 'sing song' }];
 
 let urlencodedParser = bodyParser.urlencoded({ extended: false });
 
