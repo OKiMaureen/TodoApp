@@ -8,8 +8,7 @@ $(document).ready(function(){
           $.ajax({
             type: 'POST',
             url: '/todo',
-            dataType: 'json',
-            data: {item: item.val()},
+            data: todo,
             success: function(data){
               //do something with the data via front-end framework
               location.reload();
